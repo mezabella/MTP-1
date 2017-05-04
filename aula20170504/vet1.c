@@ -6,8 +6,8 @@
 int main ()
 {
     srand (time(0));
-    int maximo;
-    int numeros[N]
+    int maximo, i;
+    int numeros[N];
     float media;
     printf ("Entre com o valor natural maximo:");
     scanf ("%d", &maximo);
