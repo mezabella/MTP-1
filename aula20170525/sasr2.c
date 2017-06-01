@@ -1,28 +1,28 @@
-#include<stdio.h>
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-void pares(int n)
-{
+void numerosp (int numero){
     int i;
-    printf("\nNumeros pares:");
-    for(i=1; i<=n; i++)
-        if (i%2 ==0)
-        printf("%d", i);
+    for(i=1; i<=numero; i++){
+        if(i%2==0){
+            printf("%d ",i);
+        }
+    }
 }
-void impares (int n)
-{
-    int i;
-    printf("\nNumeros impares: ");
-    for(i=1; i<=n; i++)
-        if (i%2 !=0)
-        printf("%d",i);
+void numerosi (int numero){
+    int j;
+    for(j=1; j<=numero; j++){
+        if(j%2!=0){
+    printf("%d ",j);
+        }
+    }
 }
-int main()
-{
-    int n;
-    printf("Digite um numero inteiro: ");
-    scanf("%d",&n);
-    pares(n);
-    impares(n);
-    return 0;
+int main(){
+    int numero;
+    printf("Digite um numero! \n");
+    scanf("%d", &numero);
+    numerosp(numero);
+    numerosi(numero);
+return 0;
 }
+
